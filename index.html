@@ -1,47 +1,164 @@
-<!DOCTYPE html>
+Mmm<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Derecho Ahora | Definiciones, apuntes y Análisis Jurídicos</title>
+    <title>Derecho Ahora | Portal Jurídico Academic</title>
+    <!-- Fuente académica elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #333; background-color: #f9f9f9; }
-        header { background: #1a2a3a; color: white; padding: 30px; text-align: center; border-radius: 8px; }
-        h1 { margin: 0; font-size: 2.5em; }
-        p.subtitle { font-style: italic; color: #ddd; }
-        section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h2 { color: #1a2a3a; border-bottom: 2px solid #1a2a3a; padding-bottom: 5px; }
-        ul { list-style-type: square; }
+        :root {
+            --primary: #0F172A;
+            --accent: #C5A059;
+            --text-dark: #334155;
+            --bg-light: #F8FAFC;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+
+        .logo-svg {
+            width: 70px;
+            height: 70px;
+            fill: var(--accent);
+        }
+
+        h1.site-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            margin: 0.5rem 0 0 0;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+        }
+
+        p.site-subtitle {
+            font-style: italic;
+            color: var(--accent);
+            margin-top: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            border-bottom: 1px solid #E2E8F0;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul.topics {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.topics li {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #E2E8F0;
+        }
+
+        ul.topics li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #94A3B8;
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            margin-top: 4rem;
+            border-top: 1px solid #1E293B;
+        }
+
+        .signature {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.4rem;
+            color: var(--accent);
+            margin-bottom: 0.2rem;
+        }
+
+        .author-title {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #E2E8F0;
+        }
+
+        .location {
+            font-size: 0.85rem;
+            color: #64748B;
+            margin-top: 0.3rem;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Derecho Ahora</h1>
-        <p class="subtitle">Definiciones, apuntes, resúmenes y análisis sobre Derecho y Ciencias Jurídicas</p>
+        <div class="logo-container">
+            <!-- Estatua de la Justicia (Iustitia) -->
+            <svg class="logo-svg" viewBox="0 0 24 24">
+                <path d="M12 2a1 1 0 0 1 1 1v1.071c3.056.463 5.437 2.94 5.86 6.029h1.14a1 1 0 1 1 0 2h-1.034a7.003 7.003 0 0 1-5.966 5.86v3.074h2.5a1 1 0 1 1 0 2h-7a1 1 0 1 1 0-2h2.5v-3.074a7.003 7.003 0 0 1-5.966-5.86H3a1 1 0 1 1 0-2h1.14c.423-3.089 2.804-5.566 5.86-6.029V3a1 1 0 0 1 1-1zm0 4a5.002 5.002 0 0 0-4.9 4h9.8A5.002 5.002 0 0 0 12 6z"/>
+            </svg>
+        </div>
+        <h1 class="site-title">Derecho Ahora</h1>
+        <p class="site-subtitle">Definiciones, apuntes y análisis de Derecho y Ciencias Jurídicas</p>
     </header>
 
-    <section>
-        <h2>Bienvenido</h2>
-        <p>Espacio académico dedicado a la difusión de material de estudio, definiciones, resúmenes doctrinales y análisis de legislación y jurisprudencia.</p>
-    </section>
+    <div class="container">
+        <section class="card">
+            <h2>Bienvenido</h2>
+            <p>Espacio académico dedicado a la difusión de material de estudio, definiciones, doctrina, análisis de legislación y jurisprudencia del marco jurídico dominicano.</p>
+        </section>
 
-    <section>
-        <section>
-        <h2>Áreas de Estudio</h2>
-        <ul>
-            <li><strong>Derecho en General:</strong> Conceptos fundamentales, teoría general del derecho y ramas complementarias.</li>
-            <li><strong>Derecho Procesal Penal:</strong> Etapas del proceso, medidas de coerción y garantías constitucionales.</li>
-            <li><strong>Derecho Civil y Procesal Civil:</strong> Obligaciones, contratos y procedimientos.</li>
-            <li><strong>Ejercicio Forense:</strong> Redacción de instancias, recursos y práctica jurídica.</li>
-            <li><strong>Filosofía e Historia del Derecho:</strong> Evolución del pensamiento jurídico y sistemas penitenciarios.</li>
-        </ul>
-    </section>
+        <section class="card">
+            <h2>Áreas de Estudio</h2>
+            <ul class="topics">
+                <li><strong>Derecho en General:</strong> Conceptos fundamentales, teoría general del derecho y ramas jurídicas.</li>
+                <li><strong>Derecho Civil:</strong> Obligaciones, contratos, personas y garantías.</li>
+                <li><strong>Derecho Penal y Procesal Penal:</strong> Principios, procedimiento y garantías constitucionales.</li>
+            </ul>
+        </section>
+    </div>
 
-    <section>
-        <h2> Definiciones, Análisis y Artículos</h2>
-        <p>Próximamente publicaciones y comentarios sobre sentencias relevantes.</p>
-    </section>
+    <footer>
+        <div class="signature">Johan González Jiménez</div>
+        <div class="author-title">Fundador & Editor Principal</div>
+        <div class="location">San Cristóbal, República Dominicana</div>
+    </footer>
 
 </body>
 </html>
