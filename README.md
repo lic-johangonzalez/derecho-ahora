@@ -1,2 +1,2 @@
 # derecho-ahora
- Web de publicaciones acerca de apuntes, resúmenes y análisis sobre Derecho y las Ciencias jurídicas 
+ Definiciones, apuntes, resúmenes y análisis jurídicos sobre Derecho y las ciencias jurídicas.
